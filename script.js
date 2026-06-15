@@ -52,7 +52,13 @@
     const decimals = Number(element.dataset.decimals || 0);
     const prefix = element.dataset.prefix || "";
     const suffix = element.dataset.suffix || "";
-    const duration = 1150;
+
+    if (!motionAllowed) {
+      element.textContent = `${prefix}${target.toFixed(decimals)}${suffix}`;
+      return;
+    }
+
+    const duration = 1000;
     const start = performance.now();
 
     function render(now) {
@@ -67,11 +73,6 @@
       } else {
         element.textContent = `${prefix}${target.toFixed(decimals)}${suffix}`;
       }
-    }
-
-    if (!motionAllowed) {
-      element.textContent = `${prefix}${target.toFixed(decimals)}${suffix}`;
-      return;
     }
 
     requestAnimationFrame(render);
@@ -106,7 +107,10 @@
       });
     }, { rootMargin: "0px 0px -90px 0px", threshold: 0.12 });
 
-    revealTargets.forEach((element) => revealObserver.observe(element));
+    revealTargets.forEach((element, index) => {
+      element.style.transitionDelay = `${Math.min(index % 4, 3) * 55}ms`;
+      revealObserver.observe(element);
+    });
   } else {
     revealTargets.forEach((element) => element.classList.add("is-visible"));
   }
@@ -119,6 +123,12 @@
     })
     .filter((item) => item && item.section);
 
+  function setActiveNav(id) {
+    sectionMap.forEach(({ link }) => {
+      link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
+    });
+  }
+
   if ("IntersectionObserver" in window && sectionMap.length) {
     const activeObserver = new IntersectionObserver((entries) => {
       const visibleEntries = entries
@@ -126,12 +136,8 @@
         .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
 
       if (!visibleEntries.length) return;
-
-      const activeId = visibleEntries[0].target.id;
-      sectionMap.forEach(({ link }) => {
-        link.classList.toggle("is-active", link.getAttribute("href") === `#${activeId}`);
-      });
-    }, { rootMargin: "-24% 0px -66% 0px", threshold: 0 });
+      setActiveNav(visibleEntries[0].target.id);
+    }, { rootMargin: "-22% 0px -66% 0px", threshold: 0 });
 
     sectionMap.forEach(({ section }) => activeObserver.observe(section));
   }
@@ -140,34 +146,23 @@
 
   if (backToTop) {
     function toggleBackToTop() {
-      backToTop.classList.toggle("is-visible", window.scrollY > 720);
+      backToTop.classList.toggle("is-visible", window.scrollY > 640);
     }
 
     backToTop.addEventListener("click", () => {
+      closeMenu();
       window.scrollTo({ top: 0, behavior: motionAllowed ? "smooth" : "auto" });
+      history.pushState(null, "", "#top");
     });
 
     window.addEventListener("scroll", toggleBackToTop, { passive: true });
     toggleBackToTop();
   }
 
-  if (motionAllowed) {
-    const shapes = $$(".float-shape");
-    let ticking = false;
-
-    function updateShapes() {
-      const scrollY = window.scrollY;
-      shapes.forEach((shape, index) => {
-        const direction = index % 2 === 0 ? 1 : -1;
-        shape.style.setProperty("--parallax-y", `${scrollY * 0.03 * direction}px`);
-      });
-      ticking = false;
-    }
-
-    window.addEventListener("scroll", () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(updateShapes);
-    }, { passive: true });
+  if (window.location.hash) {
+    const initialSection = document.querySelector(window.location.hash);
+    if (initialSection) setActiveNav(initialSection.id);
+  } else {
+    setActiveNav("overview");
   }
 })();
