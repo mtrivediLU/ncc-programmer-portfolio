@@ -19,7 +19,7 @@
   --shadow-soft: 0 10px 26px rgba(16, 33, 29, 0.08);
   --radius: 8px;
   --container: 1180px;
-  --header-height: 76px;
+  --header-height: 70px;
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -121,8 +121,8 @@ strong {
 
 .brand__mark {
   display: grid;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   place-items: center;
   border-radius: var(--radius);
   background: linear-gradient(135deg, var(--forest), var(--teal));
@@ -139,13 +139,14 @@ strong {
 
 .brand__title {
   color: var(--forest);
+  font-size: 0.96rem;
   font-weight: 900;
   line-height: 1.1;
 }
 
 .brand__subtitle {
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 700;
 }
 
@@ -159,10 +160,10 @@ strong {
 .nav__links a {
   border-radius: 999px;
   color: var(--slate);
-  font-size: 0.84rem;
+  font-size: 0.8rem;
   font-weight: 800;
   line-height: 1;
-  padding: 11px 10px;
+  padding: 10px 9px;
   text-decoration: none;
   transition: background 180ms var(--ease), color 180ms var(--ease), box-shadow 180ms var(--ease);
 }
@@ -319,8 +320,8 @@ strong {
 }
 
 .hero {
-  min-height: calc(100vh - var(--header-height));
-  padding-block: 72px 70px;
+  min-height: calc(92vh - var(--header-height));
+  padding-block: 56px 58px;
   display: grid;
   align-items: center;
 }
@@ -329,32 +330,33 @@ strong {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.03fr) minmax(360px, 0.97fr);
-  gap: 42px;
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+  gap: 36px;
   align-items: center;
 }
 
 .hero__title {
-  max-width: 850px;
+  max-width: 760px;
   margin: 0;
   color: var(--white);
-  font-size: 5.3rem;
-  line-height: 0.98;
+  font-size: 4.1rem;
+  line-height: 1.04;
   letter-spacing: 0;
 }
 
 .hero__subtitle {
-  max-width: 760px;
-  margin: 24px 0 0;
+  max-width: 660px;
+  margin: 18px 0 0;
   color: #e9f4eb;
-  font-size: 1.16rem;
+  font-size: 1.06rem;
+  line-height: 1.55;
 }
 
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .button {
@@ -397,7 +399,7 @@ strong {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .tech-strip span,
@@ -455,7 +457,7 @@ strong {
 .workflow-card {
   border-color: var(--line-dark);
   background: rgba(255, 255, 255, 0.12);
-  padding: 22px;
+  padding: 18px;
   backdrop-filter: blur(18px);
   box-shadow: 0 24px 54px rgba(0, 0, 0, 0.22);
 }
@@ -475,7 +477,7 @@ strong {
 
 .workflow-card__header strong {
   color: var(--white);
-  font-size: 1.34rem;
+  font-size: 1.16rem;
   line-height: 1.2;
 }
 
@@ -483,12 +485,12 @@ strong {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .mini-flow span {
   position: relative;
-  min-height: 78px;
+  min-height: 64px;
   display: grid;
   place-items: center;
   border: 1px solid var(--line-dark);
@@ -524,22 +526,22 @@ strong {
   border-color: var(--line-dark);
   background: rgba(255, 255, 255, 0.1);
   color: #e8f3ea;
-  padding: 18px;
+  padding: 14px;
   box-shadow: none;
 }
 
 .cred-grid strong {
   display: block;
   color: var(--white);
-  font-size: 1.55rem;
+  font-size: 1.34rem;
   line-height: 1;
 }
 
 .cred-grid span {
   display: block;
-  margin-top: 8px;
+  margin-top: 7px;
   color: #d7eadc;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
 }
 
 .hero-reveal {
@@ -1032,7 +1034,8 @@ strong {
   }
 
   .hero__title {
-    font-size: 4.25rem;
+    font-size: 3.35rem;
+    max-width: 720px;
   }
 
   .section-heading h2 {
@@ -1049,7 +1052,7 @@ strong {
 
 @media (max-width: 820px) {
   :root {
-    --header-height: 70px;
+    --header-height: 66px;
   }
 
   .container {
@@ -1066,11 +1069,20 @@ strong {
 
   .hero {
     min-height: auto;
-    padding-block: 58px 62px;
+    padding-block: 44px 48px;
   }
 
   .hero__title {
-    font-size: 3.45rem;
+    font-size: 2.75rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+    margin-top: 16px;
+  }
+
+  .hero__actions {
+    margin-top: 22px;
   }
 
   .section-heading h2 {
@@ -1105,7 +1117,7 @@ strong {
   }
 
   .mini-flow span {
-    min-height: 54px;
+    min-height: 50px;
   }
 
   .mini-flow span:not(:last-child)::after {
@@ -1191,7 +1203,7 @@ strong {
   }
 
   .hero__title {
-    font-size: 2.75rem;
+    font-size: 2.35rem;
   }
 
   .section-heading h2 {
