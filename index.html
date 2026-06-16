@@ -4,28 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mihir Trivedi | NCC Programmer/Developer Portfolio</title>
-  <meta name="description" content="A focused portfolio supplement for Mihir Trivedi's Nature Conservancy of Canada Programmer/Developer application, connecting production software, Python, GIS, Power BI, data pipelines, and geospatial ML research to conservation decision-support work." />
+  <meta name="description" content="Role-specific portfolio for Mihir Trivedi's Nature Conservancy of Canada Programmer/Developer application: systematic conservation planning tools, R and Python pipelines, Google Earth Engine, GIS, Power BI, Docker, and geospatial ML research." />
   <meta name="author" content="Mihir Trivedi" />
+  <meta name="theme-color" content="#073b2f" />
   <meta name="robots" content="noindex, nofollow" />
 
   <meta property="og:title" content="Mihir Trivedi | NCC Programmer/Developer Portfolio" />
-  <meta property="og:description" content="Geospatial data, production software, BI, Python, GIS, and decision-support readiness for NCC." />
+  <meta property="og:description" content="Conservation decision-support tools, geospatial pipelines, BI, R, Python, GIS, and Google Earth Engine readiness for NCC." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Mihir Trivedi NCC Portfolio" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="#overview" aria-label="Mihir Trivedi NCC portfolio home">
-        <span class="brand__mark" aria-hidden="true">MT</span>
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 3 L27 9.5 V22.5 L16 29 L5 22.5 V9.5 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M16 22c4-2.6 6-5.4 6-8.7C22 10.4 19.7 8.5 16 11 12.3 8.5 10 10.4 10 13.3c0 3.3 2 6.1 6 8.7Z" fill="currentColor"/>
+          </svg>
+        </span>
         <span class="brand__text">
           <span class="brand__title">Mihir Trivedi</span>
           <span class="brand__subtitle">NCC Programmer/Developer</span>
@@ -41,16 +48,17 @@
       <div class="nav__links" id="nav-menu">
         <a href="#overview" data-nav>Overview</a>
         <a href="#fit" data-nav>Fit</a>
+        <a href="#alignment" data-nav>Alignment</a>
         <a href="#workflow" data-nav>Workflow</a>
-        <a href="#case-studies" data-nav>Case Studies</a>
+        <a href="#work" data-nav>Work</a>
         <a href="#stack" data-nav>Stack</a>
-        <a href="#ramp" data-nav>90 Days</a>
         <a href="#evidence" data-nav>Evidence</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
+    <!-- ============================ HERO ============================ -->
     <section class="hero section-dark" id="overview" aria-labelledby="hero-title">
       <div class="map-grid" aria-hidden="true"></div>
       <div class="contour contour--one" aria-hidden="true"></div>
@@ -58,116 +66,112 @@
 
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow hero-reveal">Application supplement for Nature Conservancy of Canada</p>
-          <h1 class="hero__title hero-reveal" id="hero-title">Geospatial Data Developer for Conservation Decision-Support Systems</h1>
+          <p class="eyebrow hero-reveal"><span class="eyebrow-dot"></span>Application supplement &middot; Requisition 2127</p>
+          <h1 class="hero__title hero-reveal" id="hero-title">Building the tools that turn <em>spatial data</em> into conservation decisions.</h1>
           <p class="hero__subtitle hero-reveal">
-            I build production software, Python and GIS pipelines, and Power BI outputs that turn complex spatial data into usable decisions.
+            I'm a Programmer/Developer with 8+ years across production web apps, Python and SQL pipelines, GIS, and Power BI &mdash; plus published geospatial ML research. This page maps that experience directly onto NCC's systematic conservation planning work.
           </p>
 
-          <!-- <div class="hero__actions hero-reveal" aria-label="Primary actions">
-            <a class="button button--primary" href="#case-studies">Review Evidence</a>
-            <a class="button button--secondary" href="Mihir_Trivedi_Geospatial_Data_Portfolio_NCC.pdf" target="_blank" rel="noopener">Open Geospatial PDF</a>
-            <a class="button button--quiet" href="Mihir_Trivedi_Programmer_Developer_NCC.pdf" target="_blank" rel="noopener">Resume</a>
-          </div> -->
+          <div class="hero__actions hero-reveal" aria-label="Primary actions">
+            <a class="button button--primary" href="#alignment">How I map to the role
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="button button--secondary" href="#work">See the work</a>
+            <a class="button button--quiet" href="https://drive.google.com/file/d/16IWsYALa6us2DyheGoNvdxRjPZniN-98/view?usp=sharing" target="_blank" rel="noopener">Résumé</a>
+          </div>
 
           <div class="tech-strip hero-reveal" aria-label="Relevant technologies">
+            <span>R / R&nbsp;Shiny</span>
             <span>Python</span>
             <span>ArcGIS</span>
             <span>QGIS</span>
             <span>SQL</span>
-            <span>Power BI</span>
-            <span>React</span>
+            <span>Power&nbsp;BI</span>
             <span>Docker</span>
             <span>GitHub</span>
             <span>Linux</span>
           </div>
         </div>
 
-        <aside class="hero-visual hero-reveal" aria-label="Conservation data workflow snapshot">
-          <div class="role-badge">Role fit: software + spatial data + BI</div>
-          <div class="workflow-card">
-            <div class="workflow-card__header">
-              <span>Decision-support flow</span>
-              <strong>From spatial layers to action-ready outputs</strong>
+        <aside class="hero-visual hero-reveal" aria-label="Illustrative conservation prioritization map">
+          <figure class="priomap-figure">
+            <div class="priomap-head">
+              <span class="priomap-tag">Live demo</span>
+              <strong>Systematic conservation prioritization</strong>
+              <p>An illustrative priority surface &mdash; the kind of output NCC's planning tools (e.g.&nbsp;Where&nbsp;to&nbsp;Work, prioritizr) produce from stacked spatial layers.</p>
             </div>
-            <div class="mini-flow" aria-label="Spatial data workflow">
-              <span>sources</span>
-              <span>processing</span>
-              <span>modeling</span>
-              <span>web app</span>
-              <span>dashboards</span>
+            <div class="priomap-canvas">
+              <svg class="hexmap" id="hexmap" viewBox="0 0 480 360" role="img" aria-label="Hexagonal map where higher-priority conservation cells are shaded darker and selected priority cells glow.">
+                <!-- Hex cells injected by script.js; static fallback below -->
+                <text class="hexmap__fallback" x="240" y="180" text-anchor="middle">Conservation priority map</text>
+              </svg>
             </div>
-          </div>
-          <div class="cred-grid" aria-label="Credibility snapshot">
-            <div>
-              <strong class="metric-value" data-value="8" data-suffix="+" data-decimals="0">8+</strong>
-              <span>years in software, data, BI, and AI</span>
-            </div>
-            <div>
-              <strong>MSc</strong>
-              <span>Computational Science, geospatial ML thesis</span>
-            </div>
-            <div>
-              <strong>PL-300</strong>
-              <span>Power BI Data Analyst certified</span>
-            </div>
-            <div>
-              <strong>OGR</strong>
-              <span>Co-authored geospatial ML publication</span>
-            </div>
-          </div>
+            <figcaption class="priomap-legend">
+              <span class="legend-scale" aria-hidden="true"></span>
+              <span class="legend-label">Lower&nbsp;priority &rarr; Higher&nbsp;priority</span>
+              <span class="legend-sel"><i></i>Selected for protection</span>
+            </figcaption>
+          </figure>
+          <div class="role-badge">Software&nbsp;+&nbsp;spatial data&nbsp;+&nbsp;decision support</div>
         </aside>
       </div>
+
+      <a class="scroll-cue" href="#metrics" aria-label="Scroll to proof points">
+        <span></span>
+      </a>
     </section>
 
-    <section class="metric-band" aria-label="Career proof points">
+    <!-- ====================== METRIC BAND ====================== -->
+    <section class="metric-band" id="metrics" aria-label="Career proof points">
       <div class="container metric-band__grid">
         <article class="metric-card reveal">
           <span class="metric-card__label">Experience</span>
           <strong class="metric-value" data-value="8" data-suffix="+" data-decimals="0">8+</strong>
-          <p>Software, data, BI, AI, and application development.</p>
+          <p>Years across software, data, BI, and geospatial work.</p>
         </article>
         <article class="metric-card reveal">
           <span class="metric-card__label">Geospatial ML</span>
           <strong class="metric-value" data-value="99.5" data-suffix="%" data-decimals="1">99.5%</strong>
-          <p>F1 score in Random Forest geological classification work.</p>
+          <p>F1 score on Random Forest geological classification.</p>
+        </article>
+        <article class="metric-card reveal">
+          <span class="metric-card__label">Reliability</span>
+          <strong class="metric-value" data-value="40" data-suffix="%" data-decimals="0">40%</strong>
+          <p>Manual reporting overhead removed at Flosonics Medical.</p>
         </article>
         <article class="metric-card reveal">
           <span class="metric-card__label">Delivery</span>
           <strong class="metric-value" data-value="13" data-decimals="0">13</strong>
-          <p>B2B platforms launched across Europe and North America.</p>
-        </article>
-        <article class="metric-card reveal">
-          <span class="metric-card__label">Leadership</span>
-          <strong class="metric-value" data-value="4" data-decimals="0">4</strong>
-          <p>Engineers led on production e-commerce delivery.</p>
+          <p>Production B2B platforms launched across two continents.</p>
         </article>
       </div>
     </section>
 
+    <!-- ====================== INTRO ====================== -->
     <section class="section intro-section" aria-labelledby="summary-title">
       <div class="container intro-grid">
         <div class="section-heading reveal">
-          <p class="eyebrow">First impression</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>First impression</p>
           <h2 id="summary-title">A technical builder ready to support conservation planning tools.</h2>
         </div>
         <div class="intro-copy reveal">
           <p class="lead">
-            NCC's role needs more than code. It needs clean spatial data, dependable applications, thoughtful infrastructure, and communication that helps analysts, practitioners, partners, interns, and leaders trust the output.
+            This role needs more than code. It needs clean spatial data, dependable applications, sound server infrastructure, and communication that helps analysts, partners, interns, and leadership trust the output.
           </p>
           <p>
-            My experience is strongest in adjacent environments: geospatial natural-resource research, mining data platforms, healthcare analytics, municipal reporting, and enterprise software delivery. This page shows how those skills transfer to conservation decision-support work without overstating direct conservation employment.
+            My strongest experience sits in adjacent environments: geospatial natural-resource research, mining data platforms, regulated healthcare analytics, and municipal public-safety reporting. This page shows how those skills transfer to conservation decision-support work &mdash; honestly, without overstating direct conservation employment.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- ====================== FIT MATRIX ====================== -->
     <section class="section section-soft" id="fit" aria-labelledby="fit-title">
       <div class="container">
         <div class="section-heading section-heading--center reveal">
-          <p class="eyebrow">Role fit matrix</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Role fit matrix</p>
           <h2 id="fit-title">NCC needs, matching evidence, and practical value.</h2>
-          <p>A quick scan of the strongest alignment between the Programmer/Developer role and my background.</p>
+          <p>The strongest alignment between the Programmer/Developer role and my background, at a glance.</p>
         </div>
 
         <div class="fit-table reveal" role="table" aria-label="Role fit matrix">
@@ -178,343 +182,416 @@
           </div>
           <div class="fit-row" role="row">
             <div role="cell"><strong>Decision-support web applications</strong></div>
-            <div role="cell">Built production web, mobile, API, and dashboard systems across mining, medical analytics, and enterprise platforms.</div>
-            <div role="cell">Can contribute to user-facing planning tools with release discipline and product judgment.</div>
+            <div role="cell">Shipped production web, mobile, API, and dashboard systems across mining, medical analytics, and enterprise platforms.</div>
+            <div role="cell">Ready to develop and maintain user-facing planning tools with release discipline and product judgment.</div>
           </div>
           <div class="fit-row" role="row">
             <div role="cell"><strong>Spatial data pipelines</strong></div>
-            <div role="cell">Processed large geospatial survey datasets using Python, ArcGIS, QGIS, vector workflows, and raster workflows.</div>
-            <div role="cell">Useful for layer stack preparation, QA, metadata, and repeatable spatial transformations.</div>
+            <div role="cell">Processed large geospatial survey datasets with Python, ArcGIS, and QGIS across vector and raster workflows.</div>
+            <div role="cell">Useful for layer-stack assembly, QA, metadata, and repeatable spatial transformations.</div>
           </div>
           <div class="fit-row" role="row">
-            <div role="cell"><strong>GIS and spatial analysis</strong></div>
-            <div role="cell">Built Random Forest prospectivity mapping for Superior province datasets and co-authored an Ore Geology Reviews publication.</div>
-            <div role="cell">Shows comfort turning spatial evidence into modeled, map-ready outputs.</div>
+            <div role="cell"><strong>GIS &amp; spatial analysis at scale</strong></div>
+            <div role="cell">Built Random Forest prospectivity mapping across the Superior province and co-authored an <em>Ore Geology Reviews</em> paper.</div>
+            <div role="cell">Comfort turning regional-scale spatial evidence into modeled, map-ready outputs &mdash; relevant to ecoregion and national analysis.</div>
           </div>
           <div class="fit-row" role="row">
-            <div role="cell"><strong>Docker, GitHub, Linux, support</strong></div>
-            <div role="cell">Hands-on with Docker, Linux, SSH, shell scripting, GitHub, GitHub Actions, CI/CD, environment setup, and release support.</div>
-            <div role="cell">Helps keep applications deployable, documented, and easier for a distributed team to maintain.</div>
+            <div role="cell"><strong>Servers: Docker, GitHub, Linux</strong></div>
+            <div role="cell">Hands-on with Docker, Linux, SSH, shell scripting, GitHub, GitHub&nbsp;Actions, CI/CD, and environment configuration.</div>
+            <div role="cell">Helps oversee dev and production environments and keep applications deployable and documented.</div>
           </div>
           <div class="fit-row" role="row">
-            <div role="cell"><strong>Power BI and reporting</strong></div>
-            <div role="cell">PL-300 certified, built Power BI and Tableau reporting for regulated healthcare, municipal operations, and finance teams.</div>
-            <div role="cell">Supports clear decision products for internal teams, partners, and leadership.</div>
+            <div role="cell"><strong>Power BI &amp; reporting</strong></div>
+            <div role="cell">PL-300 certified; built Power BI and Tableau reporting for regulated healthcare, municipal, and finance teams.</div>
+            <div role="cell">Supports clear decision products for internal teams, partners, and senior leadership.</div>
           </div>
           <div class="fit-row" role="row">
-            <div role="cell"><strong>Stakeholder communication</strong></div>
-            <div role="cell">Worked with Finance, QA, Production, HR, municipal staff, engineers, field users, and academic collaborators.</div>
-            <div role="cell">Reduces friction between technical outputs and practical field or policy decisions.</div>
+            <div role="cell"><strong>Mentoring &amp; partner support</strong></div>
+            <div role="cell">Led four engineers at TCS; trained municipal staff; supported field and academic stakeholders directly.</div>
+            <div role="cell">Maps to intern supervision and hands-on support for external government and research partners.</div>
           </div>
           <div class="fit-row" role="row">
             <div role="cell"><strong>Conservation planning readiness</strong></div>
-            <div role="cell">Strong adjacent foundation in geospatial ML, natural-resource research, public-sector reporting, and production software.</div>
-            <div role="cell">Prepared to ramp into NCC-specific conservation models, data, language, and partner workflows.</div>
+            <div role="cell">Strong adjacent foundation in geospatial ML, natural-resource research, and public-sector reporting.</div>
+            <div role="cell">Prepared to ramp deliberately into NCC's conservation models, data, and partner workflows.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="workflow" aria-labelledby="workflow-title">
+    <!-- ====================== CONSERVATION-TECH ALIGNMENT ====================== -->
+    <section class="section section-dark" id="alignment" aria-labelledby="alignment-title">
+      <div class="map-grid map-grid--dim" aria-hidden="true"></div>
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Visual workflow</p>
-          <h2 id="workflow-title">How my background connects to conservation decision support.</h2>
-          <p>A simple view of the kind of data journey I am prepared to support at NCC.</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Conservation-tech alignment</p>
+          <h2 id="alignment-title">Mapped to the exact stack and initiatives this role runs on.</h2>
+          <p>The Director described a stack spanning R, Python, Docker, GitHub, Google&nbsp;Earth&nbsp;Engine, and GIS, plus initiatives in biodiversity impact assessment, peatland prioritisation, and national-scale analysis. Here is exactly where I stand on each &mdash; including honest ramp areas.</p>
         </div>
 
-        <div class="workflow-diagram reveal" aria-label="Spatial decision-support workflow">
-          <article class="flow-step">
-            <span>01</span>
-            <h3>Spatial data sources</h3>
-            <p>Survey data, GIS layers, partner datasets, field observations, and published sources.</p>
+        <div class="ladder reveal" aria-label="Capability readiness by tier">
+          <div class="ladder-col ladder-col--strong">
+            <header><span class="ladder-dot"></span>Strong now</header>
+            <p class="ladder-note">Production experience I bring on day one.</p>
+            <div class="chip-cloud">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Docker</span>
+              <span>GitHub / CI-CD</span>
+              <span>Linux servers</span>
+              <span>GIS &middot; ArcGIS / QGIS</span>
+              <span>Raster &amp; vector</span>
+              <span>Power BI</span>
+              <span>Production web apps</span>
+              <span>Stakeholder delivery</span>
+            </div>
+          </div>
+          <div class="ladder-col ladder-col--working">
+            <header><span class="ladder-dot"></span>Working knowledge</header>
+            <p class="ladder-note">Used hands-on; ready to take to production quickly.</p>
+            <div class="chip-cloud">
+              <span>R</span>
+              <span>R Shiny</span>
+              <span>ArcPy</span>
+              <span>Azure (AZ-900)</span>
+              <span>scikit-learn ML</span>
+            </div>
+          </div>
+          <div class="ladder-col ladder-col--ramp">
+            <header><span class="ladder-dot"></span>Fast ramp</header>
+            <p class="ladder-note">Researched the toolchain; eager to contribute.</p>
+            <div class="chip-cloud">
+              <span>Google Earth Engine</span>
+              <span>Where to Work</span>
+              <span>prioritizr</span>
+              <span>Zonation</span>
+              <span>Gurobi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="initiative-strip reveal" aria-label="Initiatives this experience maps to">
+          <span class="initiative-strip__label">Maps to initiatives</span>
+          <ul>
+            <li>Habitat-loss metrics</li>
+            <li>Layer-stack assembly</li>
+            <li>Biodiversity impact assessment</li>
+            <li>Peatland prioritisation</li>
+            <li>Ecoregion resiliency</li>
+            <li>Conservation outcome metrics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== WORKFLOW / PIPELINE ====================== -->
+    <section class="section" id="workflow" aria-labelledby="workflow-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Decision-support pipeline</p>
+          <h2 id="workflow-title">From raw spatial layers to action-ready conservation outputs.</h2>
+          <p>The data journey I'm prepared to build and maintain at NCC &mdash; end to end, with quality checks built in.</p>
+        </div>
+
+        <div class="pipeline reveal" aria-label="Conservation data pipeline, seven stages">
+          <div class="pipeline__track" aria-hidden="true">
+            <span class="pipeline__flow"></span>
+          </div>
+
+          <article class="pipe-step">
+            <span class="pipe-step__num">01</span>
+            <span class="pipe-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </span>
+            <h3>Spatial sources</h3>
+            <p>Google&nbsp;Earth&nbsp;Engine, partner datasets, field observations, and published layers.</p>
           </article>
-          <article class="flow-step">
-            <span>02</span>
-            <h3>Raster and vector processing</h3>
-            <p>Projection checks, joins, clipping, feature engineering, reclassification, and repeatable scripts.</p>
+
+          <article class="pipe-step">
+            <span class="pipe-step__num">02</span>
+            <span class="pipe-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-5 6 5 6M16 6l5 6-5 6"/></svg>
+            </span>
+            <h3>Processing</h3>
+            <p>Projection checks, clipping, joins, and feature engineering in Python, R, and ArcPy.</p>
           </article>
-          <article class="flow-step">
-            <span>03</span>
-            <h3>Layer stack assembly</h3>
-            <p>Structured inputs for prioritization, modeling, biodiversity assessment, and spatial analysis.</p>
+
+          <article class="pipe-step">
+            <span class="pipe-step__num">03</span>
+            <span class="pipe-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg>
+            </span>
+            <h3>Layer-stack assembly</h3>
+            <p>Structured inputs for prioritisation, biodiversity assessment, and spatial analysis.</p>
           </article>
-          <article class="flow-step">
-            <span>04</span>
-            <h3>Quality checks</h3>
-            <p>Validation rules, metadata, versioning, data quality summaries, and analyst review.</p>
+
+          <article class="pipe-step">
+            <span class="pipe-step__num">04</span>
+            <span class="pipe-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.4 3.4 7.6 8 9 4.6-1.4 8-4.6 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3>Data QA</h3>
+            <p>Validation rules, metadata, versioning, and data-quality summaries for analyst review.</p>
           </article>
-          <article class="flow-step">
-            <span>05</span>
-            <h3>Prioritization or modeling</h3>
-            <p>Model-ready features, scenario comparison, ranked outputs, and reproducible interpretation.</p>
+
+          <article class="pipe-step">
+            <span class="pipe-step__num">05</span>
+            <span class="pipe-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+            </span>
+            <h3>Prioritisation</h3>
+            <p>Optimised scenarios via prioritizr / Zonation &mdash; ranked, reproducible, defensible outputs.</p>
           </article>
-          <article class="flow-step">
-            <span>06</span>
-            <h3>Decision-support web app</h3>
-            <p>Usable interfaces, APIs, deployment support, feedback loops, and issue triage.</p>
+
+          <article class="pipe-step">
+            <span class="pipe-step__num">06</span>
+            <span class="pipe-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg>
+            </span>
+            <h3>Decision-support app</h3>
+            <p>R&nbsp;Shiny / web interfaces, APIs, Docker deployment, feedback loops, and issue triage.</p>
           </article>
-          <article class="flow-step">
-            <span>07</span>
-            <h3>Dashboards and stakeholder outputs</h3>
-            <p>Power BI reports, summary visuals, documentation, training notes, and partner-ready explanations.</p>
+
+          <article class="pipe-step">
+            <span class="pipe-step__num">07</span>
+            <span class="pipe-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4M4 20h16"/><rect x="8" y="11" width="3" height="6"/><rect x="14" y="7" width="3" height="10"/></svg>
+            </span>
+            <h3>Dashboards &amp; outputs</h3>
+            <p>Power BI reports, summary visuals, and partner-ready explanations for leadership.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="case-studies" aria-labelledby="case-title">
+    <!-- ====================== CASE STUDIES ====================== -->
+    <section class="section section-dark" id="work" aria-labelledby="case-title">
       <div class="map-grid map-grid--dim" aria-hidden="true"></div>
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Case studies</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Case studies</p>
           <h2 id="case-title">Product-style evidence, not resume bullets.</h2>
-          <p>Each card highlights the problem, what I built, tools used, outcome, and relevance to NCC.</p>
+          <p>Each card frames the problem, what I built, the tools, the outcome, and the relevance to NCC.</p>
         </div>
 
         <div class="case-grid">
           <article class="case-card reveal">
-            <div class="case-card__meta">Geospatial ML research</div>
+            <div class="case-card__top">
+              <div class="case-card__meta">Geospatial ML research</div>
+              <span class="case-card__year">2022&ndash;2023</span>
+            </div>
             <h3>Mineral Exploration Research Centre</h3>
             <dl>
               <dt>Problem</dt>
-              <dd>Large regional survey datasets needed to be transformed into evidence for mineralization probability mapping.</dd>
+              <dd>Large regional survey datasets needed transforming into evidence for mineralization-probability mapping.</dd>
               <dt>What I built</dt>
-              <dd>Python, ArcGIS, and QGIS workflows for vector and raster processing, feature preparation, and Random Forest modeling.</dd>
-              <dt>Tools used</dt>
-              <dd>Python, ArcGIS, QGIS, GIS analysis, Random Forest, map-ready outputs.</dd>
+              <dd>Python, ArcGIS, and QGIS workflows for vector/raster processing, feature prep, and Random Forest modeling.</dd>
               <dt>Outcome</dt>
-              <dd>99.5% F1 score on geological classification and co-authorship on an Ore Geology Reviews publication.</dd>
+              <dd>99.5% F1 on geological classification and co-authorship in <em>Ore Geology Reviews</em>.</dd>
               <dt>Relevance to NCC</dt>
-              <dd>Directly relevant to spatial evidence preparation, model inputs, QA, and communicating technical geospatial results.</dd>
+              <dd>Regional-scale spatial evidence, model inputs, QA, and communication &mdash; the heart of conservation prioritisation.</dd>
             </dl>
+            <div class="case-tags"><span>Python</span><span>ArcGIS</span><span>QGIS</span><span>Random&nbsp;Forest</span></div>
           </article>
 
           <article class="case-card reveal">
-            <div class="case-card__meta">Production data platform</div>
+            <div class="case-card__top">
+              <div class="case-card__meta">Production data platform</div>
+              <span class="case-card__year">2024&ndash;2025</span>
+            </div>
             <h3>LoopX Mining Data Platform</h3>
             <dl>
               <dt>Problem</dt>
-              <dd>Underground mining operations needed clearer visibility into operational data and performance signals.</dd>
+              <dd>Underground operations needed clearer visibility into operational data and hazard signals.</dd>
               <dt>What I built</dt>
-              <dd>A production platform with backend logic, frontend views, PostgreSQL storage, dashboards, and low-latency visualization.</dd>
-              <dt>Tools used</dt>
-              <dd>Python, SQL, PostgreSQL, React, APIs, Linux runtime support, dashboarding.</dd>
+              <dd>A production platform solo &mdash; backend through frontend &mdash; with PostgreSQL, dashboards, and low-latency visualization.</dd>
               <dt>Outcome</dt>
-              <dd>Delivered a working system for operational monitoring, reporting, and data access.</dd>
+              <dd>A working system for real-time monitoring, reporting, and data access, with Linux runtime support.</dd>
               <dt>Relevance to NCC</dt>
-              <dd>Shows end-to-end delivery for a domain-specific decision-support application with real users.</dd>
+              <dd>End-to-end delivery of a domain-specific decision-support app with real users and uptime needs.</dd>
             </dl>
+            <div class="case-tags"><span>Python</span><span>PostgreSQL</span><span>JavaScript</span><span>Linux</span></div>
           </article>
 
           <article class="case-card reveal">
-            <div class="case-card__meta">Data warehouse and AI</div>
+            <div class="case-card__top">
+              <div class="case-card__meta">Data warehouse + AI</div>
+              <span class="case-card__year">2024&ndash;2026</span>
+            </div>
             <h3>Flosonics Medical</h3>
             <dl>
               <dt>Problem</dt>
               <dd>Cross-functional teams needed trusted analytics from scattered sales, production, QA, and HR data.</dd>
               <dt>What I built</dt>
-              <dd>A centralized PostgreSQL and dbt data warehouse, automated analytics, and an AI assistant for plain-language data access.</dd>
-              <dt>Tools used</dt>
-              <dd>Python, SQL, PostgreSQL, dbt, Power BI, Tableau, OpenAI API, Gemini API.</dd>
+              <dd>The company's first PostgreSQL + dbt warehouse, automated reporting, and a plain-language AI data assistant.</dd>
               <dt>Outcome</dt>
-              <dd>Improved reporting reliability and made analytics easier for non-technical teams to use.</dd>
+              <dd>Cut manual reporting overhead by 40% in a regulated environment and improved reliability.</dd>
               <dt>Relevance to NCC</dt>
-              <dd>Supports the same pattern of turning complex data into clear outputs for mixed technical audiences.</dd>
+              <dd>Turning complex data into clear outputs for mixed technical and non-technical audiences.</dd>
             </dl>
+            <div class="case-tags"><span>PostgreSQL</span><span>dbt</span><span>Power&nbsp;BI</span><span>OpenAI&nbsp;API</span></div>
           </article>
 
           <article class="case-card reveal">
-            <div class="case-card__meta">Public-sector reporting</div>
+            <div class="case-card__top">
+              <div class="case-card__meta">Public-sector reporting</div>
+              <span class="case-card__year">2024</span>
+            </div>
             <h3>City of Greater Sudbury</h3>
             <dl>
               <dt>Problem</dt>
-              <dd>Municipal reporting required reliable data integration for emergency response, public safety, and budgeting.</dd>
+              <dd>Municipal reporting required reliable integration for emergency response, public safety, and budgeting.</dd>
               <dt>What I built</dt>
-              <dd>ETL workflows, SQL reporting, Power BI service reports, and staff-facing data quality support.</dd>
-              <dt>Tools used</dt>
-              <dd>SSIS, Python, SQL Server, Cloud SQL Auth Proxy, Power BI, data validation.</dd>
+              <dd>SSIS/Python ETL, SQL reporting, Power BI service reports, and staff data-quality training.</dd>
               <dt>Outcome</dt>
               <dd>Supported 911 call reporting, opioid-response submissions, and budget visibility for municipal teams.</dd>
               <dt>Relevance to NCC</dt>
-              <dd>Relevant to partner-facing reporting where data quality and plain-language explanation matter.</dd>
+              <dd>Partner-facing reporting where data quality and plain-language explanation carry real consequences.</dd>
             </dl>
+            <div class="case-tags"><span>SSIS</span><span>SQL&nbsp;Server</span><span>Power&nbsp;BI</span><span>Gov&nbsp;partners</span></div>
           </article>
 
           <article class="case-card reveal">
-            <div class="case-card__meta">Field application delivery</div>
-            <h3>Minax and Vale Ground Control</h3>
+            <div class="case-card__top">
+              <div class="case-card__meta">Field application</div>
+              <span class="case-card__year">2023&ndash;2024</span>
+            </div>
+            <h3>Minax &amp; Vale Ground Control</h3>
             <dl>
               <dt>Problem</dt>
-              <dd>Field inspection workflows needed reliable data capture in underground environments with limited connectivity.</dd>
+              <dd>Field inspection workflows needed reliable capture in underground environments with no connectivity.</dd>
               <dt>What I built</dt>
-              <dd>An offline-first React Native application with sync logic, stakeholder demos, UAT support, and rollout coordination.</dd>
-              <dt>Tools used</dt>
-              <dd>React Native, mobile sync patterns, data validation, field workflow design, user training.</dd>
+              <dd>An offline-first React Native app with sync logic, stakeholder demos, UAT, and rollout coordination.</dd>
               <dt>Outcome</dt>
-              <dd>Helped field teams capture inspection data more reliably in difficult operating conditions.</dd>
+              <dd>Helped field teams capture inspection data reliably in harsh operating conditions.</dd>
               <dt>Relevance to NCC</dt>
-              <dd>Useful for understanding practitioner needs, field constraints, and low-friction data collection.</dd>
+              <dd>Understanding practitioner needs, field constraints, and low-friction data collection.</dd>
             </dl>
+            <div class="case-tags"><span>React&nbsp;Native</span><span>Offline&nbsp;sync</span><span>UAT</span><span>Rollout</span></div>
           </article>
 
           <article class="case-card reveal">
-            <div class="case-card__meta">Engineering leadership</div>
+            <div class="case-card__top">
+              <div class="case-card__meta">Engineering leadership</div>
+              <span class="case-card__year">2017&ndash;2021</span>
+            </div>
             <h3>Tata Consultancy Services</h3>
             <dl>
               <dt>Problem</dt>
-              <dd>Enterprise commerce clients needed coordinated delivery across requirements, development, releases, and defects.</dd>
+              <dd>Enterprise commerce clients needed coordinated delivery across requirements, builds, releases, and defects.</dd>
               <dt>What I built</dt>
-              <dd>Led four engineers on production platforms, covering APIs, sprint planning, backlog delivery, and release support.</dd>
-              <dt>Tools used</dt>
-              <dd>Java Spring MVC, Hibernate, REST APIs, microservices, Git, production triage.</dd>
+              <dd>Led four engineers on production platforms &mdash; APIs, sprint planning, backlog delivery, and release support.</dd>
               <dt>Outcome</dt>
               <dd>Contributed to 13 B2B platform launches across Europe and North America.</dd>
               <dt>Relevance to NCC</dt>
-              <dd>Shows delivery maturity, team communication, and production support discipline.</dd>
+              <dd>Delivery maturity, mentoring, and the production discipline this foundational role depends on.</dd>
             </dl>
+            <div class="case-tags"><span>Java&nbsp;Spring</span><span>REST&nbsp;APIs</span><span>Mentoring</span><span>Releases</span></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="stack" aria-labelledby="stack-title">
+    <!-- ====================== STACK ====================== -->
+    <section class="section section-soft" id="stack" aria-labelledby="stack-title">
       <div class="container">
         <div class="section-heading section-heading--center reveal">
-          <p class="eyebrow">Technical stack</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Technical stack</p>
           <h2 id="stack-title">Layered capabilities for a conservation technology team.</h2>
           <p>Organized by how the tools would support NCC's applications, data flows, and decision products.</p>
         </div>
 
         <div class="stack-layers">
           <article class="stack-layer reveal">
-            <span>Spatial and GIS</span>
+            <span class="stack-layer__tag">Spatial &amp; GIS</span>
             <h3>Preparing location-based evidence</h3>
             <div class="pill-cloud">
-              <span>Python</span>
-              <span>ArcGIS</span>
-              <span>QGIS</span>
-              <span>Raster workflows</span>
-              <span>Vector workflows</span>
-              <span>Spatial joins</span>
-              <span>Classification models</span>
-              <span>Working knowledge: ArcPy</span>
+              <span>Python</span><span>R</span><span>ArcGIS</span><span>QGIS</span><span>Google&nbsp;Earth&nbsp;Engine</span><span>Raster</span><span>Vector</span><span>ArcPy</span>
             </div>
           </article>
 
           <article class="stack-layer reveal">
-            <span>Data pipelines</span>
+            <span class="stack-layer__tag">Data pipelines</span>
             <h3>Making inputs repeatable and trusted</h3>
             <div class="pill-cloud">
-              <span>SQL</span>
-              <span>PostgreSQL</span>
-              <span>SQL Server</span>
-              <span>dbt</span>
-              <span>SSIS</span>
-              <span>ETL/ELT</span>
-              <span>Data quality</span>
-              <span>Metadata</span>
+              <span>SQL</span><span>PostgreSQL</span><span>SQL&nbsp;Server</span><span>dbt</span><span>SSIS</span><span>ETL/ELT</span><span>Data quality</span><span>Metadata</span>
             </div>
           </article>
 
           <article class="stack-layer reveal">
-            <span>Application development</span>
+            <span class="stack-layer__tag">Application development</span>
             <h3>Building tools people can use</h3>
             <div class="pill-cloud">
-              <span>React</span>
-              <span>React Native</span>
-              <span>Node.js</span>
-              <span>Flask</span>
-              <span>REST APIs</span>
-              <span>UAT</span>
-              <span>Documentation</span>
-              <span>Release support</span>
+              <span>R&nbsp;Shiny</span><span>React</span><span>React&nbsp;Native</span><span>Node.js</span><span>Flask</span><span>REST&nbsp;APIs</span><span>UAT</span><span>Docs</span>
             </div>
           </article>
 
           <article class="stack-layer reveal">
-            <span>Infrastructure and DevOps</span>
+            <span class="stack-layer__tag">Infrastructure &amp; DevOps</span>
             <h3>Keeping delivery maintainable</h3>
             <div class="pill-cloud">
-              <span>Docker</span>
-              <span>Linux</span>
-              <span>GitHub</span>
-              <span>GitHub Actions</span>
-              <span>CI/CD</span>
-              <span>SSH</span>
-              <span>Shell scripting</span>
-              <span>Environment config</span>
+              <span>Docker</span><span>Linux</span><span>GitHub</span><span>GitHub&nbsp;Actions</span><span>CI/CD</span><span>SSH</span><span>Shell</span><span>Env config</span>
             </div>
           </article>
 
           <article class="stack-layer reveal">
-            <span>BI and decision support</span>
+            <span class="stack-layer__tag">BI &amp; decision support</span>
             <h3>Turning analysis into decisions</h3>
             <div class="pill-cloud">
-              <span>Power BI</span>
-              <span>PL-300</span>
-              <span>DAX</span>
-              <span>Tableau</span>
-              <span>Executive reporting</span>
-              <span>Public-sector reporting</span>
-              <span>QA summaries</span>
+              <span>Power&nbsp;BI</span><span>PL-300</span><span>DAX</span><span>Power&nbsp;Query</span><span>Tableau</span><span>Executive reporting</span><span>QA summaries</span>
             </div>
           </article>
 
           <article class="stack-layer reveal">
-            <span>AI-assisted development</span>
+            <span class="stack-layer__tag">AI-assisted development</span>
             <h3>Accelerating careful engineering</h3>
             <div class="pill-cloud">
-              <span>Copilot</span>
-              <span>Claude</span>
-              <span>ChatGPT</span>
-              <span>Cursor</span>
-              <span>OpenAI API</span>
-              <span>Gemini API</span>
-              <span>Debugging</span>
-              <span>Technical writing</span>
+              <span>Copilot</span><span>Claude</span><span>ChatGPT</span><span>Cursor</span><span>OpenAI&nbsp;API</span><span>Gemini&nbsp;API</span><span>Technical writing</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft" id="ramp" aria-labelledby="ramp-title">
+    <!-- ====================== 90-DAY RAMP ====================== -->
+    <section class="section" id="ramp" aria-labelledby="ramp-title">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">90-day NCC ramp plan</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>90-day ramp plan</p>
           <h2 id="ramp-title">A credible path from onboarding to useful ownership.</h2>
           <p>Focused on learning the domain, improving reliability, and contributing without disrupting existing work.</p>
         </div>
 
         <div class="ramp-grid" aria-label="First 90 days plan">
           <article class="ramp-card reveal">
-            <span>Days 1 to 30</span>
-            <h3>Understand the system and users</h3>
-            <p>Learn application architecture, current priorities, data flows, environments, GIS workflows, user groups, and support patterns.</p>
+            <span>Days 1&ndash;30</span>
+            <h3>Understand the system &amp; users</h3>
+            <p>Learn the app architecture, data flows, environments, GIS workflows, conservation models, user groups, and support patterns.</p>
           </article>
           <article class="ramp-card reveal">
-            <span>Days 31 to 60</span>
+            <span>Days 31&ndash;60</span>
             <h3>Contribute to reliability</h3>
-            <p>Pick up bug fixes, documentation, QA checks, data validation, partner-support improvements, and small workflow refinements.</p>
+            <p>Take on bug fixes, documentation, QA checks, data validation, and partner-support improvements with small workflow refinements.</p>
           </article>
           <article class="ramp-card reveal">
-            <span>Days 61 to 90</span>
+            <span>Days 61&ndash;90</span>
             <h3>Own small features</h3>
-            <p>Improve deployment repeatability, support spatial analysis workflows, and help ship decision-support outputs with clear review notes.</p>
+            <p>Improve deployment repeatability, support spatial-analysis workflows, and ship decision-support outputs with clear review notes.</p>
           </article>
         </div>
 
         <div class="truth-note reveal">
-          <strong>Transparent positioning:</strong> I am not claiming direct conservation employment. I am bringing strong adjacent experience in geospatial data, production software, BI, public-sector reporting, and natural-resource research, then ramping deliberately into NCC's conservation-specific models and terminology.
+          <strong>Transparent positioning:</strong> I'm not claiming direct conservation employment. I bring strong adjacent experience in geospatial data, production software, BI, public-sector reporting, and natural-resource research &mdash; then ramp deliberately into NCC's conservation-specific models, tools, and terminology.
         </div>
       </div>
     </section>
 
+    <!-- ====================== EVIDENCE ====================== -->
     <section class="section section-dark" id="evidence" aria-labelledby="evidence-title">
+      <div class="map-grid map-grid--dim" aria-hidden="true"></div>
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Evidence package</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Evidence package</p>
           <h2 id="evidence-title">Documents and proof points for quick review.</h2>
           <p>One place to validate the resume story, portfolio evidence, credentials, and publication trail.</p>
         </div>
@@ -524,65 +601,86 @@
             <span>Resume</span>
             <strong>Tailored Programmer/Developer resume</strong>
             <p>Python, SQL, Power BI, GIS, production apps, Docker, Linux, GitHub, and stakeholder delivery.</p>
+            <span class="evidence-go" aria-hidden="true">Open &rarr;</span>
           </a>
           <a class="evidence-card reveal" href="https://drive.google.com/file/d/1Zsg7seI6zxnVQaUIVUdCoj4YfBEXeTyM/view?usp=sharing" target="_blank" rel="noopener">
             <span>Cover letter</span>
             <strong>NCC-specific cover letter</strong>
-            <p>Connects my software, data, GIS, and applied research background to NCC's Data and Analytics team.</p>
+            <p>Connects my software, data, GIS, and applied-research background to NCC's Data and Analytics team.</p>
+            <span class="evidence-go" aria-hidden="true">Open &rarr;</span>
           </a>
           <a class="evidence-card reveal" href="https://drive.google.com/file/d/1e224KyLaG3TUO51gDTO5K0KVh3m4aNyQ/view?usp=sharing" target="_blank" rel="noopener">
             <span>Portfolio PDF</span>
             <strong>Geospatial data portfolio</strong>
             <p>Focused evidence for spatial analysis, pipelines, dashboards, modeling, and production delivery.</p>
+            <span class="evidence-go" aria-hidden="true">Open &rarr;</span>
           </a>
           <a class="evidence-card reveal" href="https://mihirtrivedi.tech" target="_blank" rel="noopener">
             <span>Main portfolio</span>
-            <strong>Broader work history and Ask Mihir AI</strong>
-            <p>Experience, recommendations, education, certifications, publications, and profile assistant.</p>
+            <strong>Broader work history &amp; Ask&nbsp;Mihir&nbsp;AI</strong>
+            <p>Experience, recommendations, education, certifications, publications, and a profile assistant.</p>
+            <span class="evidence-go" aria-hidden="true">Open &rarr;</span>
           </a>
           <a class="evidence-card reveal" href="https://linkedin.com/in/mihirtrivedigm" target="_blank" rel="noopener">
             <span>LinkedIn</span>
-            <strong>Professional profile and recommendations</strong>
+            <strong>Professional profile &amp; recommendations</strong>
             <p>Public profile with work history, certifications, and colleague feedback.</p>
+            <span class="evidence-go" aria-hidden="true">Open &rarr;</span>
           </a>
           <a class="evidence-card reveal" href="https://www.sciencedirect.com/science/article/pii/S016913682300118X" target="_blank" rel="noopener">
             <span>Publication</span>
-            <strong>Ore Geology Reviews co-authored research</strong>
-            <p>Applied geospatial ML research connected to regional-scale spatial analysis and classification.</p>
+            <strong><em>Ore Geology Reviews</em> co-authored research</strong>
+            <p>Applied geospatial ML connected to regional-scale spatial analysis and classification.</p>
+            <span class="evidence-go" aria-hidden="true">Open &rarr;</span>
           </a>
         </div>
       </div>
     </section>
 
+    <!-- ====================== CLOSING / CONTACT ====================== -->
     <section class="section closing-section" id="contact" aria-labelledby="contact-title">
       <div class="container closing-grid">
         <div class="section-heading reveal">
-          <p class="eyebrow">Closing note</p>
-          <h2 id="contact-title">I would bring disciplined engineering to NCC's conservation data products.</h2>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Closing note</p>
+          <h2 id="contact-title">I'd bring disciplined engineering to NCC's conservation data products.</h2>
           <p>
-            I understand NCC's bias-reduction approach and this page is intended only as a structured supplement to make relevant evidence easy to review.
+            I understand and respect NCC's bias-reduction approach &mdash; this page is intended only as a structured supplement that makes relevant evidence easy to review.
           </p>
         </div>
 
         <aside class="contact-card reveal" aria-label="Contact information">
           <h3>Mihir Trivedi</h3>
-          <p>Sudbury, Ontario, Canada. Canadian Permanent Resident. Open to remote work across Canada.</p>
+          <p>Sudbury, Ontario, Canada &middot; Canadian Permanent Resident &middot; Open to remote work across Canada.</p>
           <div class="contact-links">
-            <a href="mailto:mihir1611t@gmail.com">mihir1611t@gmail.com</a>
-            <a href="tel:+12493605901">249-360-5901</a>
-            <a href="https://linkedin.com/in/mihirtrivedigm" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://mihirtrivedi.tech" target="_blank" rel="noopener">mihirtrivedi.tech</a>
+            <a href="mailto:mihir1611t@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              mihir1611t@gmail.com
+            </a>
+            <a href="tel:+12493605901">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+              249-360-5901
+            </a>
+            <a href="https://linkedin.com/in/mihirtrivedigm" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://mihirtrivedi.tech" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.6 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.6-4-9s1.5-6.5 4-9Z"/></svg>
+              mihirtrivedi.tech
+            </a>
           </div>
         </aside>
       </div>
     </section>
   </main>
 
-  <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">Top</button>
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg>
+  </button>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <p>2026 Mihir Trivedi. Built as an NCC Programmer/Developer application supplement.</p>
+      <p>&copy; 2026 Mihir Trivedi &middot; Built as an NCC Programmer/Developer application supplement.</p>
       <a href="#top">Back to top</a>
     </div>
   </footer>
